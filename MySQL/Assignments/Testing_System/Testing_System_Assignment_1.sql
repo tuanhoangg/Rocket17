@@ -1,14 +1,15 @@
+DROP DATABASE IF EXISTS Testing_System;
 CREATE DATABASE Testing_System;
 USE Testing_System;
 
 CREATE TABLE Department(
-	DepartmentID			INT,
-    DepartmentName			VARCHAR(50)
+		DepartmentID		INT,
+		DepartmentName		VARCHAR(50)
 );
 
 CREATE TABLE `Position`(
-	PositionID			INT,
-	PositionName		VARCHAR(50)
+		PositionID			INT,
+		PositionName		VARCHAR(50)
 );
 
 CREATE TABLE `Account`(
@@ -57,7 +58,7 @@ CREATE TABLE CategoryQuestion(
 		AnswerID			INT,
         Content				VARCHAR(50),
         QuestionID			INT,
-        IsCorrect			VARCHAR(50)
+        IsCorrect			BIT
   );
   
 CREATE TABLE	Exam(
